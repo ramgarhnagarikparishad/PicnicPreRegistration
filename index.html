@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="mwr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a51f32">
+  <title>RNP Picnic 2027 | Pre-Registration</title>
+  <style>
+    :root{--red:#a51f32;--red2:#7c1424;--cream:#fff8e9;--gold:#e6b64f;--ink:#29231f;--muted:#746a61;--line:#eadcc6;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 8% 0%,#ffe8b4 0,transparent 30%),linear-gradient(145deg,#fff9ed,#fff1d6);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+    .page{width:min(760px,100%);margin:0 auto;padding:20px 14px 44px}
+    .topbar{display:flex;justify-content:flex-end;gap:7px;align-items:center;margin-bottom:12px}
+    .lang{border:1px solid #d8b86d;background:#fff9ed;color:var(--red2);padding:8px 12px;border-radius:999px;font-weight:750;cursor:pointer}
+    .lang.active{background:var(--red);color:white;border-color:var(--red)}
+    .hero{position:relative;overflow:hidden;text-align:center;background:linear-gradient(135deg,var(--red2),var(--red) 60%,#c64b3a);color:white;border-radius:24px;padding:28px 20px 25px;box-shadow:0 12px 30px #7c14242a}
+    .hero:before,.hero:after{content:"✦ ✧ ✦";position:absolute;color:#f5d27b;font-size:22px;letter-spacing:12px;opacity:.6}
+    .hero:before{left:12px;top:12px}.hero:after{right:10px;bottom:10px}
+    .logo{width:106px;height:106px;object-fit:contain;background:#fff;border-radius:50%;padding:7px;margin:0 auto 12px;display:block}
+    .eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#ffe2a0;text-transform:uppercase}
+    h1{font-size:clamp(26px,6vw,42px);line-height:1.08;margin:9px 0 8px;font-weight:900}
+    .subtitle{font-size:15px;margin:0;color:#fff2d8}
+    .eventline{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .pill{background:#ffffff1d;border:1px solid #ffffff55;border-radius:999px;padding:7px 12px;font-size:13px;font-weight:700}
+    .intro{margin:16px 2px 20px;text-align:center;color:#5c5045;font-size:14px;line-height:1.6}
+    form{display:grid;gap:15px}
+    .card{background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 5px 18px #6f3c1510}
+    .card h2{font-size:18px;margin:0 0 15px;color:var(--red2)}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+    .field{display:flex;flex-direction:column;gap:7px}
+    .field.full{grid-column:1/-1}
+    label{font-size:13px;font-weight:750;color:#51443a}
+    input,select{width:100%;min-height:47px;border:1px solid #ddcfba;border-radius:11px;background:white;padding:11px 12px;font:inherit;color:var(--ink);outline:none}
+    input:focus,select:focus{border-color:var(--red);box-shadow:0 0 0 3px #a51f3214}
+    .hint{font-size:12px;color:var(--muted);line-height:1.45;margin:0}
+    .members{display:grid;gap:13px}
+    .member{border:1px solid #e8d7bd;border-radius:14px;padding:14px;background:#fffaf0}
+    .memberhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    .memberhead strong{color:var(--red2)}
+    .member .fields{gap:11px}
+    .progress{height:8px;border-radius:99px;background:#f1e5d2;overflow:hidden;margin:12px 0 7px}
+    .progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--red),var(--gold));transition:width .2s}
+    .progress-text{font-size:12px;color:var(--muted)}
+    .summary{background:#fff4d8;border:1px dashed #d9b75f;border-radius:12px;padding:12px;font-size:13px;line-height:1.55}
+    .summary strong{color:var(--red2)}
+    .submit{width:100%;border:0;border-radius:14px;padding:16px 18px;background:linear-gradient(135deg,var(--red),var(--red2));color:#fff;font:inherit;font-weight:850;font-size:16px;cursor:pointer;box-shadow:0 8px 20px #a51f3229}
+    .submit:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
+    .privacy{text-align:center;font-size:12px;color:var(--muted);line-height:1.55;margin:0}
+    .thanks{display:none;text-align:center;padding:24px 18px;background:#fffdf8;border:1px solid var(--line);border-radius:18px}
+    .thanks .check{font-size:42px}
+    .thanks h2{color:var(--red2);margin:7px 0}
+    .thanks p{line-height:1.65;color:#62564c}
+    .smallprint{font-size:11px;color:#887b6e;text-align:center;margin-top:18px}
+    @media(max-width:520px){.page{padding:12px 10px 30px}.hero{padding:24px 14px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.card{padding:15px}.logo{width:88px;height:88px}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="topbar" aria-label="Language">
+      <button type="button" class="lang active" data-lang="mwr">मारवाड़ी</button>
+      <button type="button" class="lang" data-lang="hi">हिन्दी</button>
+      <button type="button" class="lang" data-lang="en">English</button>
+    </div>
+
+    <header class="hero">
+      <img class="logo" src="https://res.cloudinary.com/dstoe6rmq/image/upload/v1795676231/rnp_logo_xeptij.png" alt="RNP official logo">
+      <div class="eyebrow" data-i18n="eyebrow">RNP परिवार री तरफ सूं</div>
+      <h1 data-i18n="title">RNP पिकनिक 2027</h1>
+      <p class="subtitle" data-i18n="subtitle">प्री-रजिस्ट्रेशन चालू है</p>
+      <div class="eventline">
+        <span class="pill" data-i18n="date">10 जनवरी 2027 • रविवार</span>
+        <span class="pill" data-i18n="place">श्रीहरी कानन</span>
+      </div>
+    </header>
+
+    <p class="intro" data-i18n="intro">आवण री तैयारी खातर आपरै अर आपरै परिवार रा सदस्यां री जानकारी भरो। ई केवल प्री-रजिस्ट्रेशन है — अभी कोई भुगतान करनो कोनी है।</p>
+
+    <form id="preregForm">
+      <section class="card">
+        <h2 data-i18n="yourDetails">आपरी जानकारी</h2>
+        <div class="fields">
+          <div class="field full">
+            <label for="registrantName" data-i18n="yourName">आपरो नाम</label>
+            <input id="registrantName" name="registrantName" autocomplete="name" required maxlength="80">
+          </div>
+          <div class="field">
+            <label for="registrantPhone" data-i18n="yourPhone">आपरो WhatsApp नंबर</label>
+            <input id="registrantPhone" name="registrantPhone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10 digit mobile number" required pattern="[0-9+ ()-]{10,18}">
+          </div>
+          <div class="field">
+            <label for="group" data-i18n="groupQuestion">काई आप WhatsApp ग्रुप में हो?</label>
+            <select id="group" name="group" required>
+              <option value="" data-i18n="choose">चुनो</option>
+              <option value="yes" data-i18n="yes">हां</option>
+              <option value="no" data-i18n="no">ना</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="count" data-i18n="countQuestion">कुल कितरा जणा री प्री-रजिस्ट्रेशन करणी है?</label>
+            <select id="count" name="count" required>
+              <option value="" data-i18n="chooseCount">सदस्य संख्या चुनो</option>
+            </select>
+            <p class="hint" data-i18n="countHint">आप जेतरा सदस्य चुनोगा, ओतरा सदस्यां री अलग-अलग जानकारी भरनी पड़सी।</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="membersCard" hidden>
+        <h2 data-i18n="membersTitle">सदस्यां री जानकारी</h2>
+        <p class="hint" data-i18n="membersHint">हर सदस्य रो नाम, उमर, लिंग अर WhatsApp नंबर भरो।</p>
+        <div class="progress"><span id="progressBar"></span></div>
+        <div class="progress-text" id="progressText"></div>
+        <div class="members" id="members"></div>
+      </section>
+
+      <section class="card" id="summaryCard" hidden>
+        <h2 data-i18n="reviewTitle">प्री-रजिस्ट्रेशन रो सार</h2>
+        <div class="summary" id="summary"></div>
+        <p class="hint" style="margin-top:10px" data-i18n="amountHint">रकम अभी वेबसाइट पर दिखाई कोनी जासी। यह केवल अंदरूनी हिसाब खातर है। हर सदस्य खातर ₹800 जोड़्यो जावै है।</p>
+      </section>
+
+      <button class="submit" id="submitBtn" type="submit" disabled data-i18n="submit">जानकारी परिषद ने WhatsApp करो</button>
+      <p class="privacy" data-i18n="privacy">बटन दबावण पर WhatsApp में संदेश तैयार खुलसी। प्री-रजिस्ट्रेशन भेजण खातर WhatsApp में Send भी दबावणो जरूरी है।</p>
+    </form>
+
+    <section class="thanks" id="thanks" aria-live="polite">
+      <div class="check">🎉</div>
+      <h2 data-i18n="thanksTitle">आपरो प्री-रजिस्ट्रेशन खातर धन्यवाद!</h2>
+      <p data-i18n="thanksText">आपने प्री-रजिस्टर कर लियो है। भुगतान रो लिंक थोड़ै समय में आपणे भेज्यो जासी।</p>
+      <p data-i18n="thanksNote">ध्यान राखजो: WhatsApp में खुल्यो संदेश परिषद ने भेजण खातर Send दबावणो बाकी है।</p>
+    </section>
+    <div class="smallprint" data-i18n="footer">RNP Picnic 2027 • केवल प्री-रजिस्ट्रेशन</div>
+  </main>
+
+<script>
+(() => {
+  const target = "918276810555";
+  const $ = id => document.getElementById(id);
+  let language = "mwr";
+  let memberValues = [];
+  const countSelect = $("count");
+  for (let n = 1; n <= 30; n++) {
+    const opt = document.createElement("option");
+    opt.value = n;
+    opt.textContent = n;
+    countSelect.appendChild(opt);
+  }
+
+  const translations = {
+    mwr: {
+      eyebrow:"RNP परिवार री तरफ सूं",title:"RNP पिकनिक 2027",subtitle:"प्री-रजिस्ट्रेशन चालू है",
+      date:"10 जनवरी 2027 • रविवार",place:"श्रीहरी कानन",
+      intro:"आवण री तैयारी खातर आपरै अर आपरै परिवार रा सदस्यां री जानकारी भरो। ई केवल प्री-रजिस्ट्रेशन है — अभी कोई भुगतान करनो कोनी है।",
+      yourDetails:"आपरी जानकारी",yourName:"आपरो नाम",yourPhone:"आपरो WhatsApp नंबर",groupQuestion:"काई आप WhatsApp ग्रुप में हो?",
+      choose:"चुनो",yes:"हां",no:"ना",countQuestion:"कुल कितरा जणा री प्री-रजिस्ट्रेशन करणी है?",chooseCount:"सदस्य संख्या चुनो",
+      countHint:"आप जेतरा सदस्य चुनोगा, ओतरा सदस्यां री अलग-अलग जानकारी भरनी पड़सी।",membersTitle:"सदस्यां री जानकारी",
+      membersHint:"हर सदस्य रो नाम, उमर, लिंग अर WhatsApp नंबर भरो।",reviewTitle:"प्री-रजिस्ट्रेशन रो सार",
+      amountHint:"रकम अभी वेबसाइट पर दिखाई कोनी जासी। यह केवल अंदरूनी हिसाब खातर है। हर सदस्य खातर ₹800 जोड़्यो जावै है।",
+      submit:"जानकारी परिषद ने WhatsApp करो",privacy:"बटन दबावण पर WhatsApp में संदेश तैयार खुलसी। प्री-रजिस्ट्रेशन भेजण खातर WhatsApp में Send भी दबावणो जरूरी है।",
+      thanksTitle:"आपरो प्री-रजिस्ट्रेशन खातर धन्यवाद!",thanksText:"आपने प्री-रजिस्टर कर लियो है। भुगतान रो लिंक थोड़ै समय में आपणे भेज्यो जासी।",
+      thanksNote:"ध्यान राखजो: WhatsApp में खुल्यो संदेश परिषद ने भेजण खातर Send दबावणो बाकी है।",footer:"RNP Picnic 2027 • केवल प्री-रजिस्ट्रेशन",
+      member:"सदस्य",useMyDetails:"मैं पहला सदस्य हूँ — ऊपर दी गई मेरी जानकारी इस्तेमाल करो",name:"नाम",age:"उमर",sex:"लिंग",phone:"WhatsApp नंबर",selectSex:"लिंग चुनो",male:"पुरुष",female:"महिला",other:"अन्य",
+      progress:(done,total)=>`${done} / ${total} सदस्यां री जानकारी पूरी`,summary:(name,phone,group,count,filled)=>`मुख्य रजिस्टर करावण वालो: <strong>${name}</strong><br>WhatsApp: <strong>${phone}</strong><br>ग्रुप में: <strong>${group}</strong><br>कुल सदस्य: <strong>${count}</strong><br>भरी जानकारी: <strong>${filled}</strong>`,
+      whatsappGroupYes:"हां",whatsappGroupNo:"ना",messageTitle:"RNP Picnic 2027 – प्री-रजिस्ट्रेशन",
+      msgRegistrant:"मुख्य रजिस्टर करावण वालो",msgGroup:"WhatsApp ग्रुप में",msgCount:"कुल सदस्य",msgMembers:"सदस्यां री जानकारी",msgThanks:"ई केवल प्री-रजिस्ट्रेशन है। भुगतान रो लिंक बाद में भेज्यो जासी।"
+    },
+    hi: {
+      eyebrow:"RNP परिवार की ओर से",title:"RNP पिकनिक 2027",subtitle:"प्री-रजिस्ट्रेशन शुरू है",
+      date:"10 जनवरी 2027 • रविवार",place:"श्रीहरी कानन",
+      intro:"आयोजन की तैयारी के लिए अपने और अपने परिवार के सदस्यों की जानकारी भरें। यह केवल प्री-रजिस्ट्रेशन है — अभी कोई भुगतान नहीं करना है।",
+      yourDetails:"आपकी जानकारी",yourName:"आपका नाम",yourPhone:"आपका WhatsApp नंबर",groupQuestion:"क्या आप WhatsApp ग्रुप में हैं?",
+      choose:"चुनें",yes:"हाँ",no:"नहीं",countQuestion:"कुल कितने लोगों का प्री-रजिस्ट्रेशन करना है?",chooseCount:"सदस्यों की संख्या चुनें",
+      countHint:"आप जितने सदस्य चुनेंगे, उतने सदस्यों की अलग-अलग जानकारी भरनी होगी।",membersTitle:"सदस्यों की जानकारी",
+      membersHint:"हर सदस्य का नाम, उम्र, लिंग और WhatsApp नंबर भरें।",reviewTitle:"प्री-रजिस्ट्रेशन का सार",
+      amountHint:"रकम अभी वेबसाइट पर दिखाई नहीं जाएगी। यह केवल आंतरिक गणना के लिए है। हर सदस्य के लिए ₹800 जोड़े जाते हैं।",
+      submit:"जानकारी परिषद को WhatsApp करें",privacy:"बटन दबाने पर WhatsApp में संदेश तैयार खुलेगा। प्री-रजिस्ट्रेशन भेजने के लिए WhatsApp में Send भी दबाना होगा।",
+      thanksTitle:"प्री-रजिस्ट्रेशन के लिए धन्यवाद!",thanksText:"आपने प्री-रजिस्टर कर लिया है। भुगतान का लिंक जल्द ही आपको भेजा जाएगा।",
+      thanksNote:"ध्यान दें: WhatsApp में खुले संदेश को परिषद को भेजने के लिए Send दबाना बाकी है।",footer:"RNP Picnic 2027 • केवल प्री-रजिस्ट्रेशन",
+      member:"सदस्य",useMyDetails:"मैं पहला सदस्य हूँ — ऊपर दी गई मेरी जानकारी इस्तेमाल करें",name:"नाम",age:"उम्र",sex:"लिंग",phone:"WhatsApp नंबर",selectSex:"लिंग चुनें",male:"पुरुष",female:"महिला",other:"अन्य",
+      progress:(done,total)=>`${done} / ${total} सदस्यों की जानकारी पूरी`,summary:(name,phone,group,count,filled)=>`मुख्य रजिस्ट्रेशनकर्ता: <strong>${name}</strong><br>WhatsApp: <strong>${phone}</strong><br>ग्रुप में: <strong>${group}</strong><br>कुल सदस्य: <strong>${count}</strong><br>भरी गई जानकारी: <strong>${filled}</strong>`,
+      whatsappGroupYes:"हाँ",whatsappGroupNo:"नहीं",messageTitle:"RNP Picnic 2027 – प्री-रजिस्ट्रेशन",
+      msgRegistrant:"मुख्य रजिस्ट्रेशनकर्ता",msgGroup:"WhatsApp ग्रुप में",msgCount:"कुल सदस्य",msgMembers:"सदस्यों की जानकारी",msgThanks:"यह केवल प्री-रजिस्ट्रेशन है। भुगतान का लिंक बाद में भेजा जाएगा।"
+    },
+    en: {
+      eyebrow:"From the RNP family",title:"RNP Picnic 2027",subtitle:"Pre-registration is now open",
+      date:"10 January 2027 • Sunday",place:"Sreehari Kanan",
+      intro:"Share your details and the details of each family member for event planning. This is pre-registration only — no payment is required now.",
+      yourDetails:"Your details",yourName:"Your name",yourPhone:"Your WhatsApp number",groupQuestion:"Are you already in the WhatsApp group?",
+      choose:"Choose",yes:"Yes",no:"No",countQuestion:"How many people are you pre-registering in total?",chooseCount:"Select number of members",
+      countHint:"You’ll need to enter separate details for every member you select.",membersTitle:"Member details",
+      membersHint:"Enter each member’s name, age, sex and WhatsApp number.",reviewTitle:"Pre-registration summary",
+      amountHint:"The amount will not be displayed on this website at this stage. It is calculated internally at ₹800 per member.",
+      submit:"Send details to Parishad on WhatsApp",privacy:"This opens a pre-written message in WhatsApp. You must press Send in WhatsApp to submit your pre-registration.",
+      thanksTitle:"Thank you for pre-registering!",thanksText:"Your pre-registration has been noted. You will receive the payment link soon.",
+      thanksNote:"Please remember: you still need to press Send in WhatsApp to send the message to Parishad.",footer:"RNP Picnic 2027 • Pre-registration only",
+      member:"Member",useMyDetails:"I am the first registrant — use my details above",name:"Name",age:"Age",sex:"Sex",phone:"WhatsApp number",selectSex:"Select sex",male:"Male",female:"Female",other:"Other",
+      progress:(done,total)=>`${done} of ${total} member details completed`,summary:(name,phone,group,count,filled)=>`Primary registrant: <strong>${name}</strong><br>WhatsApp: <strong>${phone}</strong><br>In group: <strong>${group}</strong><br>Total members: <strong>${count}</strong><br>Details completed: <strong>${filled}</strong>`,
+      whatsappGroupYes:"Yes",whatsappGroupNo:"No",messageTitle:"RNP Picnic 2027 – Pre-registration",
+      msgRegistrant:"Primary registrant",msgGroup:"Already in WhatsApp group",msgCount:"Total members",msgMembers:"Member details",msgThanks:"This is pre-registration only. The payment link will be sent later."
+    }
+  };
+  const t = () => translations[language];
+  function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  function renderLanguage(){
+    document.documentElement.lang = language === "en" ? "en" : language === "hi" ? "hi" : "mwr";
+    document.querySelectorAll("[data-i18n]").forEach(el=>{
+      const key=el.dataset.i18n, val=t()[key];
+      if(typeof val==="string") el.textContent=val;
+    });
+    document.querySelectorAll(".lang").forEach(b=>b.classList.toggle("active",b.dataset.lang===language));
+    document.querySelectorAll(".member").forEach((el,i)=>translateMember(el,i));
+    updateSummary();
+  }
+  document.querySelectorAll(".lang").forEach(b=>b.addEventListener("click",()=>{language=b.dataset.lang;renderLanguage();}));
+
+  function translateMember(el,i){
+    const d=t();
+    el.querySelector(".member-title").textContent=`${d.member} ${i+1}`;
+    el.querySelectorAll("[data-label]").forEach(l=>l.textContent=d[l.dataset.label]);
+    const useLabel=el.querySelector("[data-use-my-details]");if(useLabel)useLabel.textContent=d.useMyDetails;
+    const sex=el.querySelector("select");
+    sex.options[0].textContent=d.selectSex;
+    sex.options[1].textContent=d.male;sex.options[2].textContent=d.female;sex.options[3].textContent=d.other;
+  }
+  function buildMembers(n){
+    const holder=$("members");holder.innerHTML="";memberValues=Array.from({length:n},()=>({name:"",age:"",sex:"",phone:""}));
+    for(let i=0;i<n;i++){
+      const card=document.createElement("div");card.className="member";
+      card.innerHTML=`<div class="memberhead"><strong class="member-title"></strong></div>
+        ${i===0?`<label style="display:flex;gap:9px;align-items:flex-start;margin:0 0 12px;font-weight:700"><input type="checkbox" data-use-me style="width:18px;min-height:18px;margin:1px 0 0"><span data-use-my-details></span></label>`:""}
+        <div class="fields">
+          <div class="field full"><label data-label="name"></label><input data-key="name" required maxlength="80" autocomplete="off"></div>
+          <div class="field"><label data-label="age"></label><input data-key="age" type="number" min="0" max="120" required inputmode="numeric"></div>
+          <div class="field"><label data-label="sex"></label><select data-key="sex" required><option value=""></option><option value="male"></option><option value="female"></option><option value="other"></option></select></div>
+          <div class="field full"><label data-label="phone"></label><input data-key="phone" type="tel" inputmode="tel" required pattern="[0-9+ ()-]{10,18}" placeholder="10 digit mobile number"></div>
+        </div>`;
+      card.querySelectorAll("input[data-key],select[data-key]").forEach(input=>input.addEventListener("input",()=>{
+        memberValues[i][input.dataset.key]=input.value;updateSummary();
+      }));
+      if(i===0){
+        const useMe=card.querySelector("[data-use-me]");
+        const firstName=card.querySelector('[data-key="name"]');
+        const firstPhone=card.querySelector('[data-key="phone"]');
+        const syncMe=()=>{
+          const checked=useMe.checked;
+          firstName.readOnly=checked;firstPhone.readOnly=checked;
+          firstName.style.background=checked?"#fff4d8":"white";
+          firstPhone.style.background=checked?"#fff4d8":"white";
+          if(checked){
+            firstName.value=$("registrantName").value.trim();
+            firstPhone.value=$("registrantPhone").value.trim();
+            memberValues[0].name=firstName.value;memberValues[0].phone=firstPhone.value;
+          }
+          updateSummary();
+        };
+        useMe.addEventListener("change",syncMe);
+        $("registrantName").addEventListener("input",()=>{if(useMe.checked)syncMe();});
+        $("registrantPhone").addEventListener("input",()=>{if(useMe.checked)syncMe();});
+      }
+      holder.appendChild(card);translateMember(card,i);
+    }
+    $("membersCard").hidden=false;$("summaryCard").hidden=false;updateSummary();
+  }
+  function normalizePhone(phone){return phone.replace(/\D/g,"");}
+  function updateSummary(){
+    const n=Number(countSelect.value||0),done=memberValues.filter(m=>m.name.trim()&&m.age!==""&&m.sex&&normalizePhone(m.phone).length>=10).length;
+    $("progressBar").style.width=(n?done/n*100:0)+"%";
+    $("progressText").textContent=t().progress(done,n);
+    const group=$("group").value==="yes"?t().whatsappGroupYes:$("group").value==="no"?t().whatsappGroupNo:"—";
+    $("summary").innerHTML=t().summary(escapeHTML($("registrantName").value.trim()||"—"),escapeHTML($("registrantPhone").value.trim()||"—"),escapeHTML(group),n||"—",done);
+    $("submitBtn").disabled=!(n>0&&$("registrantName").value.trim()&&normalizePhone($("registrantPhone").value).length>=10&&$("group").value&&done===n);
+    // Internal total only; deliberately never rendered on the page.
+    const internalPreRegistrationTotal = n * 800;
+    void internalPreRegistrationTotal;
+  }
+  countSelect.addEventListener("change",()=>{const n=Number(countSelect.value);if(n)buildMembers(n);else{$("membersCard").hidden=true;$("summaryCard").hidden=true;memberValues=[];updateSummary();}});
+  ["registrantName","registrantPhone","group"].forEach(id=>$(id).addEventListener("input",updateSummary));
+  $("group").addEventListener("change",updateSummary);
+
+  $("preregForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    if(!$("preregForm").reportValidity())return;
+    const d=t(),n=memberValues.length;
+    const group=$("group").value==="yes"?d.whatsappGroupYes:d.whatsappGroupNo;
+    let msg=`${d.messageTitle}\n\n${d.msgRegistrant}: ${$("registrantName").value.trim()}\nWhatsApp: ${$("registrantPhone").value.trim()}\n${d.msgGroup}: ${group}\n${d.msgCount}: ${n}\n\n${d.msgMembers}:\n`;
+    memberValues.forEach((m,i)=>{msg+=`\n${i+1}. ${m.name.trim()} | ${m.age} | ${m.sex==="male"?d.male:m.sex==="female"?d.female:d.other} | WhatsApp: ${m.phone.trim()}\n`;});
+    msg+=`\n${d.msgThanks}`;
+    $("thanks").style.display="block";
+    $("thanks").scrollIntoView({behavior:"smooth",block:"center"});
+    const url=`https://wa.me/${target}?text=${encodeURIComponent(msg)}`;
+    window.location.href=url;
+  });
+  renderLanguage();
+})();
+</script>
+</body>
+</html>
